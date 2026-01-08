@@ -1,0 +1,101 @@
+{
+  "app": {
+    "signingConfigs": [
+     
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "compatibleSdkVersionStage": 'beta3',
+        "targetSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "useNormalizedOHMUrl": true
+          },
+          "externalNativeOptions": {
+            "abiFilters": [
+              "arm64-v8a",
+              "x86_64"
+            ]
+          }
+        },
+        "label": "$string:app_name_debug"
+      },
+      {
+        "name": "release",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "compatibleSdkVersionStage": 'beta3',
+        "targetSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "debuggable": false,
+          "strictMode": {
+            "useNormalizedOHMUrl": true
+          },
+          "externalNativeOptions": {
+            "abiFilters": [
+              "arm64-v8a",
+              "x86_64"
+            ]
+          },
+          "arkOptions": {
+            "buildProfileFields": {
+              "signKey": "466e706a537943d598c031afbafdc04e"
+            }
+          }
+        },
+        "label": "$string:app_name"
+      },
+      {
+        "name": "enterprise",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "compatibleSdkVersionStage": 'beta3',
+        "targetSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "useNormalizedOHMUrl": true
+          },
+          "externalNativeOptions": {
+            "abiFilters": [
+              "arm64-v8a",
+              "x86_64"
+            ]
+          },
+          "arkOptions": {
+            "buildProfileFields": {
+              "signKey": "100b6afb634b4f0db4af5a177de1752c"
+            }
+          }
+        },
+        "bundleName": "com.baidu.baiduapp.ent",
+        "label": "$string:app_name_enterprise"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

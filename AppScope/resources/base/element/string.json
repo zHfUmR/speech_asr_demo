@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "speech_asr_demo"
+    },
+    {
+      "name": "app_name_debug",
+      "value": "asr"
+    },
+    {
+      "name": "app_name_enterprise",
+      "value": "asr"
+    }
+  ]
+}
